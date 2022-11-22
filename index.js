@@ -13,8 +13,8 @@ function update()   {
       return response.json();
     })
     .then(function(data) {
-      
-       quote.innerHTML  =  `"${data.content}"`;
+      // `"${data.content}"`;
+       quote.innerHTML  =  data.content;
        author.innerHTML  =   data.author;
     });
      
