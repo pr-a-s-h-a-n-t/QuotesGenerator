@@ -1,4 +1,4 @@
-[
+const quotesData = [
   {
     "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
     "author": "Thomas Edison"
@@ -6572,3 +6572,22 @@
     "author": "Tom Jackson"
   }
 ]
+
+ 
+
+let quote = document.getElementById("quotes") ;
+let author = document.getElementById("author") ;
+let button = document.getElementById("btn");
+ 
+ 
+
+ 
+
+function update()   {   
+ 
+           quote.innerHTML  =   quotesData[Math.floor((Math.random()*quotesData.length))].text ;
+           author.innerHTML  =   quotesData[Math.floor((Math.random()*quotesData.length))].author;
+     
+    
+}
+  
